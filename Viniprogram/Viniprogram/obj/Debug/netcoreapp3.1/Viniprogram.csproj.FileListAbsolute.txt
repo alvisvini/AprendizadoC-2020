@@ -1,0 +1,13 @@
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.exe
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.deps.json
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.runtimeconfig.json
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.runtimeconfig.dev.json
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.dll
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\bin\Debug\netcoreapp3.1\Viniprogram.pdb
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.csprojAssemblyReference.cache
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.AssemblyInfoInputs.cache
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.AssemblyInfo.cs
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.csproj.CoreCompileInputs.cache
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.dll
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.pdb
+C:\Users\alvis\source\repos\Viniprogram\Viniprogram\obj\Debug\netcoreapp3.1\Viniprogram.genruntimeconfig.cache
