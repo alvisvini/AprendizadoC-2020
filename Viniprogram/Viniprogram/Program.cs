@@ -20,21 +20,52 @@ namespace Viniprogram
 
             string snu = sn.ToUpper();
 
-            int idade;
+            int idade = 0;
 
-            
+            bool vf = false;
+
+            if (snu == "N")
+            {
+                vf = true;
+            }
+            if (snu == "S")
+            {
+                vf = true;
+            }
+
+
+            while (vf == false)
+            {
+                Console.WriteLine("Digite uma opçãp válida ");
+
+                 sn = Console.ReadLine();
+
+                 snu = sn.ToUpper();
+
+                if (snu == "N")
+                {
+                    vf = true;
+                }
+                if (snu == "S")
+                {
+                    vf = true;
+                }
+
+            }
+
+
+
             if (snu == "N")
             {
                 idade = 2020 - ano;
 
             }
-           else
+            else 
             {
                 idade = 2021 - ano;
 
             }
-
-            
+           
             if (idade <= 18)
             {
 
@@ -42,7 +73,11 @@ namespace Viniprogram
             }
             else
             {
-                Console.WriteLine("Sua idade é,  " + idade + ", " + "Portanto você é maior de idade");
+                
+                for ( int x = 1; x <= 10; x++)
+                {
+                    Console.WriteLine("Sua idade é,  " + idade + ", " + "Portanto você é maior de idade" + x);
+                }
             }
 
 
