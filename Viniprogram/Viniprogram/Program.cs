@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+
 
 namespace Viniprogram
 {
@@ -6,81 +8,36 @@ namespace Viniprogram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Entre com seu nome");
+            Triangulo x, y;
 
-            string nome = Console.ReadLine();
+            x = new Triangulo();
+            y = new Triangulo();
 
-            Console.WriteLine("olá" + " " +nome + ", " + "Entre com seu ano de nascimento");
-
-            int ano = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Você Já fez aniversarios esse ano ? SIM - S / NÃO - N ");
-
-            string sn = Console.ReadLine();
-
-            string snu = sn.ToUpper();
-
-            int idade = 0;
-
-            bool vf = false;
-
-            if (snu == "N")
+            Console.WriteLine("Entre com as medidas do triângulo X:");
+            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Entre com as medidas do triângulo Y:");
+            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double p = (x.A + x.B + x.C) / 2.0;
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            p = (y.A + y.B + y.C) / 2.0;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+            Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            if (areaX > areaY)
             {
-                vf = true;
-            }
-            if (snu == "S")
-            {
-                vf = true;
-            }
-
-
-            while (vf == false)
-            {
-                Console.WriteLine("Digite uma opçãp válida ");
-
-                 sn = Console.ReadLine();
-
-                 snu = sn.ToUpper();
-
-                if (snu == "N")
-                {
-                    vf = true;
-                }
-                if (snu == "S")
-                {
-                    vf = true;
-                }
-
-            }
-
-
-
-            if (snu == "N")
-            {
-                idade = 2020 - ano;
-
-            }
-            else 
-            {
-                idade = 2021 - ano;
-
-            }
-           
-            if (idade <= 18)
-            {
-
-                Console.WriteLine("Sua idade é, " + idade + ", " + "Portanto você é menor de idade");
+                Console.WriteLine("Maior área: X");
             }
             else
             {
-                
-                for ( int x = 1; x <= 10; x++)
-                {
-                    Console.WriteLine("Sua idade é,  " + idade + ", " + "Portanto você é maior de idade" + x);
-                }
+                Console.WriteLine("Maior área: Y");
             }
 
 
-                    }
+
+        }
     }
 }
